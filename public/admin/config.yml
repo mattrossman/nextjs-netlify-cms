@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: mattrossman/nextjs-netlify-cms
+  branch: main
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "pages/blog"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
